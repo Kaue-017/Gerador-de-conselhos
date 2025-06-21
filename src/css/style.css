@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerador-conselho {
+    width: 500px;
+    height: 290px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+}
+
+.gerador-conselho .container {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gerador-conselho .numero-conselho {
+    text-align: center;
+    color: var(--button-title-color);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.gerador-conselho .conselho {
+    text-align: center;
+    color: var(--text-color);
+    display: flex;
+    font-weight: 800;
+    margin-right: 38px;
+    margin-left: 38px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.gerador-conselho .divisor {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.gerador-conselho .gerador {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 26px;
+}
+
+.gerador-conselho .gerador-botao {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--button-title-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gerador-conselho .gerador-botao:active {
+    transform: scale(110%);
+}
+
+.gerador-conselho .botaoimg {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .gerador-conselho {
+        width: 340px;
+        height: 290px;
+    }
+
+    .gerador-conselho .conselho {
+        font-size: 20px;
+    }
+
+    .gerador-conselho .gerador-button {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .gerador-conselho .botaoimg {
+        width: 20px;
+        height: 20px;
+    }
+}
